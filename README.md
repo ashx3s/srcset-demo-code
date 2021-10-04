@@ -34,7 +34,6 @@
 
 #### A note on `1x, 2x, 3x` syntax
 - you can replace overt widths as shown above with `1x`, `2x`, `3x`
-  - this will calculate where
 
 ---
 
@@ -73,7 +72,7 @@
 - In this example the sizes declaration translate to:
   - **If** the viewport is at least 960 pixels wide, **then** make the slot for the image 80vw
   - **Else If** the viewport is at least 640 pixels wide, **then** make the slot for the image 90vw
-  - **Else** make the slow for the image 100vw 
+  - **Else** make the slot for the image 100vw 
 - This will effect the img selection
   - As the slot is 80vw at 960px, the actual px size of the slot will be closer to 860px
   - And the breakpoint at 640px slot will be closer to 570px
