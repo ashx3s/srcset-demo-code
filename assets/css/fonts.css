@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+/* Heading Font sizes */
+h1 {
+  font-size: clamp(2.4rem, 8.2vw, 6.2rem);
+}
+h2 {
+  font-size: clamp(2.0rem, 8.0vw, 6rem);
+}
+li h3 {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Body Text Sizes */
+a, p, li {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.4;
+  font-size: clamp(1.4rem, 4.2vw, 3.4rem);
+}

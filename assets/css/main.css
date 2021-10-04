@@ -1,0 +1,22 @@
+header {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+header hr {
+  width: 80vw;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+
+  background-color: black;
+  color: white;
+
+  height: 10vh;
+  margin-top: 1rem;
+}
+

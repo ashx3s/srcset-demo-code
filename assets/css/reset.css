@@ -1,0 +1,37 @@
+/* General Settings */
+/* ---------------- */
+* {
+  box-sizing: border-box;
+}
+/* Remove margin on body */
+body {
+  margin: 0;
+}
+
+/* remove ul list styling */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* remove link underline */
+nav ul a {
+  text-decoration: none;
+}
+
+/* --- Images --- */
+img, video, canvas, audio, iframe, embed, object {
+  /* this is to set default */
+  display: block;
+  /* if an image is made inline, this is a good default */
+  vertical-align: middle;
+  max-width: 100%;
+}
+/* This is for IE10 and earlier */
+img {
+  border-style: none;
+}
+/* --- Typography Fallbacks --- */
+/* For Legacy Browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}

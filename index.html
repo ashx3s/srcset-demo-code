@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raster Image Optimization</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Image Optimization and Display Examination</h1>
+      <p>Fork this repo and start hacking</p>
+      <hr>
+    </header>
+    <section>
+      <header>
+        <h2>Using just srcset</h2>
+      </header>
+      <img src="assets/images/sm/penguin-family-500.jpg" alt="A baby and adult penguin among other penguins" srcset="assets/images/sm/penguin-family-500.jpg 500w,
+      assets/images/md/penguin-family-800.jpg 800w,
+      assets/images/lg/penguin-family-1800.jpg 1500w" loading="lazy">
+    </section>
+    <section>
+      <header>
+        <h2>Using sizes and srcset together</h2>
+      </header>
+      <img src="assets/images/sm/penguin-family-500.webp" alt="family of penguins" sizes="(min-width: 960px) 80vw,
+               (min-width: 640px) 90vw,
+               100vw" srcset="assets/images/sm/penguin-family-500.webp 500w,
+               assets/images/md/penguin-family-800.webp 800w,
+               assets/images/lg/penguin-family-1800.webp 1200w">
+    </section>
+
+    <section>
+      <header>
+        <h2>Things to test with these images</h2>
+      </header>
+      <ul>
+        <li>Visually test how the images are loaded by changing the browser width</li>
+        <li>Change the widths in srcset to see how things render at different sizes</li>
+        <li>Change the sizes breakpoints</li>
+        <li>
+          <h3>Modify the images</h3>
+          <ul>
+            <li>resize the images</li>
+            <li>change the quality</li>
+            <li>Keep them under 200kb</li>
+            <li>Add a visual marker on the different versions of webp images</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2021 Ashlyn Knox | MIT License</p>
+  </footer>
+</body>
+
+</html>
