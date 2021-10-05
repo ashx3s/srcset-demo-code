@@ -22,14 +22,17 @@ nav ul a {
 img, video, canvas, audio, iframe, embed, object {
   /* this is to set default */
   display: block;
+
   /* if an image is made inline, this is a good default */
   vertical-align: middle;
   max-width: 100%;
 }
+
 /* This is for IE10 and earlier */
 img {
   border-style: none;
 }
+
 /* --- Typography Fallbacks --- */
 /* For Legacy Browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {

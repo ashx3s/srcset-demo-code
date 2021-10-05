@@ -82,6 +82,20 @@
   - as long as the slot is img-sm will be used
 
 ---
+## Settings height and width in html
+This is considered a best practice again because it helps the browser block out space at loading time. It can be a little difficult to make work right.
+
+### Tips
+- take a mobile first approach (src is set to your sm image)
+- make sure that your height and width are using the values from the actual image
+- to make it responsive use
+```
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+```
 
 ## Attributions
 

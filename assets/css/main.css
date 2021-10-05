@@ -1,7 +1,6 @@
 header {
   display: grid;
   place-items: center;
-  padding: 2rem;
 }
 
 header hr {
@@ -16,7 +15,13 @@ footer {
   background-color: black;
   color: white;
 
-  height: 10vh;
-  margin-top: 1rem;
+  height: 6rem;
 }
+
+/* This setting solves the issue */
+  img {
+   width: 100%;
+   height: auto;
+   aspect-ratio: attr(width) / attr(height);
+  }
 

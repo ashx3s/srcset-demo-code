@@ -32,13 +32,17 @@
       </header>
       <img src="assets/images/sm/penguin-family-500.jpg" alt="A baby and adult penguin among other penguins" srcset="assets/images/sm/penguin-family-500.jpg 500w,
                   assets/images/md/penguin-family-800.jpg 800w,
-                  assets/images/lg/penguin-family-1800.jpg 1500w" loading="lazy">
+                  assets/images/lg/penguin-family-1800.jpg 1500w" width="500" height="749" loading="lazy">
     </section>
     <section>
       <header>
         <h2>Using sizes and srcset together with webp images</h2>
       </header>
-      <img src="assets/images/sm/penguin-family-500.webp" alt="family of penguins" sizes="" srcset="">
+      <img src="assets/images/sm/penguin-family-500.webp" sizes="(min-width: 960px) 80vw,
+                  (min-width: 640px) 90vw,
+                  100vw" srcset="assets/images/sm/penguin-family-500.webp 500w,
+                 assets/images/md/penguin-family-800.webp 1000w,
+                 assets/images/lg/penguin-family-1800.webp 1500w" alt="family of penguins" width="500" height="749">
     </section>
 
     <section>
